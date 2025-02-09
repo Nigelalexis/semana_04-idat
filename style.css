@@ -1,0 +1,98 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color:blueviolet;
+    justify-content: center;
+    font-size: 1.5vw;
+    align-items: center;
+    /* margin-top: 150px; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.conteiner{
+   height: inherit;
+   border: 1px solid;
+   position: relative;
+   margin: 50% 50%;
+
+}
+
+.card{
+    border: 1px solid rgb(83, 65, 152);
+    border-radius: 20px;
+    width: 30%;
+    margin: 0  auto;
+    padding: 10px;
+    color: wheat;
+    background-color: rgb(150, 160, 170);
+}
+
+.imagen-card{
+  
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    
+}
+
+.imagen-card img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.presentacion-card h1{
+    text-align: center;
+    padding: 10px;
+}
+.presentacion-card p{
+    text-align: center;
+}
+
+
+.redes-sociales ul{
+    display: flex;
+    justify-content:space-around;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.redes-sociales a{
+    border: 1px solid blue;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+}
+
+.container-tarjeta{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    padding: 20px;
+    transition: all 2s  ease-in;
+    animation: myAnim 10s ease 0s 1 normal forwards ;
+    
+}
+
+.container-tarjeta:hover{
+    
+    background-color: rosybrown;
+    cursor: pointer;
+}
+
+@keyframes myAnim {
+	0%,
+	50%,
+	100% {
+		opacity: 1;
+	}
+
+	25%,
+	75% {
+		opacity: 0;
+	}
+}
